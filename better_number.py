@@ -21,7 +21,7 @@ def generate_triple(x):
 def query_comparison(X, Y):
     messages = [
         {"role": "system", "content": "You are a helpful assistant that answers with just one number"},
-        {"role": "user", "content": f"Which number is your favourite, {X} or {Y}? Respond with just the number"}
+        {"role": "user", "content": f"Which number is better, {X} or {Y}? Respond with just the number"}
     ]
     
     response = client.chat.completions.create(
