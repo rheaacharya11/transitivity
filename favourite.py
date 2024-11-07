@@ -13,8 +13,8 @@ def generate_number(x):
 # Function to generate random triples (A, B, C) sorted by sum of prime factors
 def generate_triple(x):
     A = generate_number(x)
-    B = generate_number(x)  # Ensure B < A
-    C = generate_number(x)  # Ensure C < B
+    B = generate_number(x) 
+    C = generate_number(x)  
     return A, B, C
 
 # Function to query OpenAI API about which number it prefers or if one is less than the other
